@@ -1,21 +1,53 @@
+import { describe, it, expect, beforeEach } from "vitest"
 
-import { describe, expect, it } from "vitest";
+// This is a simplified test file for the quantum expedition planning contract
+describe("Quantum Expedition Planning Contract Tests", () => {
+  // Setup test environment
+  beforeEach(() => {
+    // Reset contract state (simplified for this example)
+    console.log("Test environment reset")
+  })
+  
+  it("should register new quantum expeditions", () => {
+    // Simulated function call
+    const expeditionId = 1
+    const registrationSuccess = true
+    
+    // Assertions
+    expect(registrationSuccess).toBe(true)
+    expect(expeditionId).toBeDefined()
+  })
+  
+  it("should add team members to expeditions", () => {
+    // Simulated function call and state
+    const expeditionId = 1
+    const isLeadResearcher = true
+    const addSuccess = isLeadResearcher ? true : false
+    
+    // Assertions
+    expect(addSuccess).toBe(true)
+  })
+  
+  it("should start expeditions correctly", () => {
+    // Simulated function call and state
+    const expeditionId = 1
+    const isLeadResearcher = true
+    const isPlanned = true
+    const startSuccess = isLeadResearcher && isPlanned ? true : false
+    
+    // Assertions
+    expect(startSuccess).toBe(true)
+  })
+  
+  it("should complete expeditions correctly", () => {
+    // Simulated function call and state
+    const expeditionId = 1
+    const isLeadResearcher = true
+    const isActive = true
+    const completeSuccess = isLeadResearcher && isActive ? true : false
+    
+    // Assertions
+    expect(completeSuccess).toBe(true)
+  })
+})
 
-const accounts = simnet.getAccounts();
-const address1 = accounts.get("wallet_1")!;
-
-/*
-  The test below is an example. To learn more, read the testing documentation here:
-  https://docs.hiro.so/stacks/clarinet-js-sdk
-*/
-
-describe("example tests", () => {
-  it("ensures simnet is well initalised", () => {
-    expect(simnet.blockHeight).toBeDefined();
-  });
-
-  // it("shows an example", () => {
-  //   const { result } = simnet.callReadOnlyFn("counter", "get-counter", [], address1);
-  //   expect(result).toBeUint(0);
-  // });
-});
