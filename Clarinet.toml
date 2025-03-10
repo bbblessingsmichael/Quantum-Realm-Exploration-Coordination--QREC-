@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+[contracts.quantum-cartography]
+path = 'contracts/quantum-cartography.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.quantum-expedition-planning]
 path = 'contracts/quantum-expedition-planning.clar'
 clarity_version = 2
