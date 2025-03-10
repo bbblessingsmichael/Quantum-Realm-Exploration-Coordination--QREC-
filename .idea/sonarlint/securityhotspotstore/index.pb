@@ -7,3 +7,5 @@ Y
 )tests/quantum-expedition-planning.test.ts,b/d/bdbff5ef0b20cf30be222a5196d8af54e32207e8
 R
 "contracts/quantum-cartography.clar,9/c/9cd34594fa3971bf2de82a2f72569401b1760b11
+Q
+!tests/quantum-cartography.test.ts,f/9/f9613050291c3eaee974b026b0226ab5ef4bcf84
